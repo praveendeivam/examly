@@ -1,0 +1,27 @@
+<div *ngIf="!qover">
+    
+    
+    <app-question [questionIndex]="currentIndex" (userans)="receive($event)" (corrans)="correct($event)"(total)="queslength($event)">
+     </app-question>
+     
+     <div class="move">
+    <button  (click)="goPrevious()">Previous</button> &nbsp;
+    
+    <button (click)="goNext()">Next</button>
+    </div> </div>
+    
+    <div *ngIf='qover'>
+        <h1> Quiz is Completed </h1>
+        <h2> Thanks for Attending the quiz </h2>
+        <br> <h3> Your Score </h3>
+        <div class="circle">{{score}}/{{len}}</div>
+    <br><br><br><br>
+     <!-- <div class="move1">  <button (click)="restart()">Restart Quiz </button> </div> -->
+     <!-- <div *ngIf="!rqover">
+            <app-question [questionIndex]="currentIndex" (userans)="receive($event)" (corrans)="correct($event)"(total)="queslength($event)">
+                </app-question>
+      </div> -->.
+      <
+        
+    </div>
+    

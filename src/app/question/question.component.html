@@ -1,0 +1,22 @@
+<br>
+<br>
+<div class="question"> Question {{questionIndex+1}} of {{questions.length}}  
+ <h5>{{currentquestion}}</h5>
+
+</div>
+<div class="options"> 
+ <p *ngFor="let options of currentoptions">
+   <input (click)="useranswer(options)" type="radio" value={{options}} name="answer">
+  {{options}}
+</p>
+
+</div>
+<!--
+
+<br>
+<h5>{{currentquestion}}</h5>
+<p *ngFor="let options of currentoptions">
+  {{options}}
+</p>
+
+-->

@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mango",
+            "outputPath": "docs",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "mango"
+  "defaultProject": "mango",
+  "cli": {
+    "analytics": "838abfbb-421f-416b-bbeb-1edef02fde03"
+  }
 }

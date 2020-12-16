@@ -1,0 +1,13 @@
+.question
+{
+    color:orangered;
+    margin-left: 500px;
+    font-size: 29px;
+}
+
+.options
+{
+    color: blue;
+    margin-left:500px;
+    font-size:20px;
+}
